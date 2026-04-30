@@ -229,29 +229,29 @@ export function PredictionSection() {
       <div className="container px-4 md:px-6 mx-auto max-w-4xl relative z-10 w-3xl w-full">
         
         {/* AI Assistant - Standing behind Survey Box */}
-        <div className="flex justify-end items-center relative z-10 pr-4 md:pr-12 w-full pt-8 md:pt-12 mb-[-15px] md:mb-[-25px]">
-          <div className="flex items-center flex-row-reverse relative gap-4 md:gap-6">
+        <div className="flex justify-center md:justify-end items-center relative z-10 px-2 sm:px-4 md:px-0 md:pr-12 w-full pt-8 md:pt-12 mb-4 md:mb-6">
+          <div className="flex items-center flex-row-reverse relative gap-2 md:gap-6 w-full md:w-auto">
             
             {/* Kid Image - Lottie Animation */}
-            <div className="w-40 h-40 md:w-56 md:h-56 relative z-10 pointer-events-none drop-shadow-xl flex items-center justify-center">
+            <div className="w-24 h-24 shrink-0 md:w-56 md:h-56 relative z-10 pointer-events-none drop-shadow-xl flex items-center justify-center">
               <AssistantLottie />
             </div>
 
             {/* Chat Bubble */}
-            <div className="relative w-64 md:w-[340px] bg-transparent dark:bg-transparent p-4 md:p-6 rounded-[20px] rounded-bl-none border-4 border-black dark:border-white shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.1)] z-30">
+            <div className="relative flex-1 md:flex-none md:w-[340px] bg-transparent dark:bg-transparent p-3 sm:p-4 md:p-6 rounded-[20px] rounded-bl-none border-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] md:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] dark:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.1)] md:dark:shadow-[6px_6px_0px_0px_rgba(255,255,255,0.1)] z-30">
               {isAiTyping ? (
                 <div className="flex gap-2 items-center justify-end h-6 px-1">
-                  <span className="w-3 h-3 bg-[#FDB927] border-2 border-black rounded-full animate-bounce"></span>
-                  <span className="w-3 h-3 bg-[#FDB927] border-2 border-black rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></span>
-                  <span className="w-3 h-3 bg-[#FDB927] border-2 border-black rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></span>
+                  <span className="w-2 h-2 md:w-3 md:h-3 bg-[#FDB927] border-2 border-black rounded-full animate-bounce"></span>
+                  <span className="w-2 h-2 md:w-3 md:h-3 bg-[#FDB927] border-2 border-black rounded-full animate-bounce" style={{ animationDelay: '0.15s' }}></span>
+                  <span className="w-2 h-2 md:w-3 md:h-3 bg-[#FDB927] border-2 border-black rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></span>
                 </div>
               ) : (
-                <p className="text-black dark:text-white font-bold text-lg md:text-xl leading-relaxed relative z-10 text-right">
+                <p className="text-black dark:text-white font-bold text-sm sm:text-base md:text-xl leading-relaxed relative z-10 text-right">
                   {aiMessage}
                 </p>
               )}
               <div className="absolute top-2 left-3 opacity-20 rotate-12">
-                <Sparkle className="w-8 h-8 text-[#FF6B7A]" />
+                <Sparkle className="w-6 h-6 md:w-8 md:h-8 text-[#FF6B7A]" />
               </div>
             </div>
           </div>
