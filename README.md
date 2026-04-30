@@ -1,6 +1,6 @@
 # 🩺 Heart Disease Risk Prediction Assistant
 
-![App Preview](images/image.png)
+![App Preview](https://github.com/AbdoAhmedAbdelmonem/Datasets/blob/main/image.png)
 
 An interactive Next.js web application that helps users assess their heart disease risk through a friendly, step-by-step health survey. The app features a cute AI robot assistant that reacts to your answers in real-time (in Egyptian Arabic), making the experience engaging and supportive.
 
