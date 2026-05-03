@@ -44,7 +44,6 @@ const featureConfig: Feature[] = [
   { id: "diabetes_status", label: "عندك سكر؟ 🍬", type: "select", defaultValue: "", options: [{label: "لأ", value: "لا"}, {label: "مرحلة ما قبل السكر", value: "مرحلة ما قبل السكري"}, {label: "اه", value: "اه"}] },
   { id: "had_stroke", label: "جتلك جلطة دماغية قبل كده؟ 🧠", type: "select", defaultValue: "", options: [{label: "لأ", value: "لا"}, {label: "اه", value: "اه"}] },
   { id: "difficulty_walking", label: "بتواجه صعوبة في المشي أو طلوع السلم؟ 🚶‍♂️", type: "select", defaultValue: "", options: [{label: "لأ", value: "لا"}, {label: "اه", value: "اه"}] },
-  { id: "no_doctor_due_to_cost", label: "طنشت تروح لدكتور عشان الفلوس؟ 💸", type: "select", defaultValue: "", options: [{label: "لأ", value: "لا"}, {label: "اه", value: "اه"}] },
 ]
 
 // Memoized Lottie Components to prevent reloading when form states change
@@ -162,7 +161,6 @@ export function PredictionSection() {
       had_stroke: mapValue(formData.had_stroke, yesNoMap),
       diabetes_status: mapValue(formData.diabetes_status, diabetesMap),
       physical_activity: mapValue(formData.physical_activity, yesNoMap),
-      no_doctor_due_to_cost: mapValue(formData.no_doctor_due_to_cost, yesNoMap),
       general_health: mapValue(formData.general_health, generalHealthMap),
       physical_health_days: Number(formData.physical_health_days) || 0,
       difficulty_walking: mapValue(formData.difficulty_walking, yesNoMap),
